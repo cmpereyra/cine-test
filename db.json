@@ -1,0 +1,59 @@
+{
+  "continente": [
+    {
+      "id": 1,
+      "nombre": "America latina",
+      "subname": "latinos"
+    },
+    {
+      "id": 3,
+      "nombre": "Europa",
+      "subname": "europeos"
+    },
+    {
+      "id": 2,
+      "nombre": "Africa",
+      "subname": "Africanos"
+    }
+  ],
+  "paises": [
+    {
+      "id": 1,
+      "nombre": "Uruguay",
+      "subname": "Uruguayos",
+      "continenteid": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Francia",
+      "subname": "Franceses",
+      "continenteid": 3
+    },
+    {
+      "id": 2,
+      "nombre": "Congo",
+      "subname": "Congoleños",
+      "continenteid": 2
+    }
+  ],
+  "ciudades": [
+    {
+      "id": 3,
+      "nombre": "Paris",
+      "subname": "parisinos",
+      "paisid": 3
+    },
+    {
+      "id": 1,
+      "nombre": "Montevideo",
+      "subname": "montevideanos",
+      "paisid": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Brazzaville",
+      "subname": "Negros de whatssap",
+      "paisid": 2
+    }
+  ]
+}

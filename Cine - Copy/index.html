@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+</head>
+
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6-push-3">
+    <form class="form-horizontal" id="addFilmForm" action="" method="post" style="text-align: start;" onSubmit="addFilm(event, this)">
+       <div class="form-group">
+	   <fieldset>
+            <legend>Ingresar películas</legend>
+
+            <label for="filmName">Nombre:</label>
+            <input id="filmName" type="text" name="filmName" placeholder="Ingresar nombre de la película" class="insertFilmInput" required />
+            <div class="clearDiv"></div>
+          </div>
+            <label for="filmYear">Año:</label>
+            <input id="filmYear" type="number" min="0" max="2500" name="filmYear" placeholder="Ingresar el año de la película" class="insertFilmInput"
+                required />
+            <div class="clearDiv"></div>
+
+            <label for="filmGenre">Género:</label>
+            <select id="filmGenre" class="insertFilmInput" style="width: 71%" required>
+                <option value="Acción">Acción</option>
+                <option value="Drama">Drama</option>
+                <option value="Ciencia Ficción">Ciencia Ficción</option>
+            </select>
+            <div class="clearDiv"></div>
+           
+            <label for="filmVoters">Votantes:</label>
+            <input id="filmVoters" type="number" min="1" name="filmVoters" placeholder="Ingresar cantidad de votantes" class="insertFilmInput"
+                required />
+            <div class="clearDiv"></div>
+
+            <label for="filmTotalVotes">Total de votos:</label>
+            <input id="filmTotalVotes" type="number" min="1" name="filmTotalVotes" placeholder="Ingresar total de votos" class="insertFilmInput"
+                required />
+            <div class="clearDiv"></div>
+
+            <input type="submit" value="Guardar" class="filmFormButton" />
+            <input type="button" value="Limpiar" class="filmFormButton" style="margin-right: 5px;" />
+        </fieldset>
+    </form>
+    <table id="lista">
+	       <tr>
+		       <td>Nombre</td>
+			   <td>Año</td>
+			   <td>Genero</td>
+			   <td>Puntaje</td>
+		   </tr>
+	</table>
+
+    <script src="index.js"></script>
+	
+	<script>
+	var element=document.getElementByTagName("tr")[0].paremtNode;
+	var elemento=document.createElement("td");
+	var contenido=document.createTextNode("harrypotter");
+	elemento.appendChild(contenido);
+	document.body.appendChild(elemento);
+	
+	var padre=document.getElementByTagName("tr")[0].parentNode;
+	var elemento=document.createElement("td");
+	var contenido=document.createTextNode("2001");
+	elemento.appendChild(contenido);
+	
+	
+	
+	document.body.appendChild(elemento);
+	
+	</script>
+</body>
+
+</html>
